@@ -1,0 +1,55 @@
+/* Estilos para el contenedor del header */
+.header {
+    background-color: rgb(191, 191, 244);
+    height: 310px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos para el contenedor del título */
+.titulo {
+    margin-right: 100px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    right: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+/* Estilos básicos para el h1 y h2 */
+.moving-text {
+    position: relative; /* Necesario para animar el movimiento */
+    animation: move 5s infinite alternate ease-in-out; /* Configuración de la animación */
+}
+
+/* Estilos para la imagen del perfil */
+.perfil {
+    width: 300px;
+    margin-right: 100px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+}
+
+/* Definición de la animación */
+@keyframes move {
+    0% {
+        left: 0; /* Punto de inicio */
+    }
+    50% {
+        left: 20%; /* Punto medio */
+    }
+    100% {
+        left: 0; /* Punto final */
+    }
+}
